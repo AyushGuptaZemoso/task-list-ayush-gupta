@@ -1,7 +1,7 @@
 package com.codurance.training.actions;
 
  public interface TaskActions {
-     void show();
+     void show(String commandLine);
 
      void add(String commnandLine);
 
@@ -16,4 +16,16 @@ package com.codurance.training.actions;
      void help();
 
      void error(String command);
-}
+
+     void deadline(String command);
+
+     void today();
+
+     void delete(String command);
+
+     void showByDeadline();
+
+     void showByDate(String s);
+
+     void customize(String s);
+ }
